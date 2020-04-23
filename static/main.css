@@ -1,0 +1,87 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-content: space-between;
+	align-items: center;	
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+.grid{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.row{
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+.node{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #00D6EA;
+	width: 1.5vw;
+	height: 1.5vw;
+}
+.visited{
+	background-color: #00CE5D;
+	animation-name: anime-visit;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+}
+.wall{
+	background-color: #3C3C3C;
+}
+.path{
+	background-color: #FFD900;
+	animation-name: anime-path;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+}
+.node_sign{
+	position: relative;
+	height: 1.4vw;
+	width: 1.4vw;
+}
+@keyframes anime-visit{
+	0%{
+		transform: scale(0.3);
+		opacity: 0.3;
+		background-color: #00EACB;
+		border-radius: 50%;
+	}
+	50%{
+		transform: scale(1.2);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(1.0);
+		opacity: 1;
+	}
+}
+@keyframes anime-path{
+	0%{
+		transform: scale(0.3);
+	}
+	50%{
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1.0);
+	}
+}
