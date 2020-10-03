@@ -1,2 +1,2 @@
 # Visualize-Graph
-## This is a React app for visualising how graphs algorithms work.
+## This is a ReactJS app for visualising how graphs algorithms work
